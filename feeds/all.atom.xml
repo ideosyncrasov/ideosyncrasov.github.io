@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>krasov's blog</title><link href="https://ideosyncrasov.github.io/" rel="alternate"></link><link href="https://ideosyncrasov.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ideosyncrasov.github.io/</id><updated>2017-10-22T14:20:00+02:00</updated><entry><title>Day 10</title><link href="https://ideosyncrasov.github.io/day-10.html" rel="alternate"></link><published>2017-10-22T14:20:00+02:00</published><updated>2017-10-22T03:23:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-22:/day-10.html</id><summary type="html">&lt;p&gt;I'm not gonna make it.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Last-Minute-Effort&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>krasov's blog</title><link href="https://ideosyncrasov.github.io/" rel="alternate"></link><link href="https://ideosyncrasov.github.io/feeds/all.atom.xml" rel="self"></link><id>https://ideosyncrasov.github.io/</id><updated>2017-10-22T14:20:00+02:00</updated><entry><title>Day 10</title><link href="https://ideosyncrasov.github.io/day-10.html" rel="alternate"></link><published>2017-10-22T14:20:00+02:00</published><updated>2017-10-22T03:23:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-22:/day-10.html</id><summary type="html">&lt;h1&gt;Last-Minute-Effort&lt;/h1&gt;
+&lt;p&gt;There are officially 15 hours 38 minutes and 23 seconds left. Not a whole lot,
+but let's try anyway.&lt;/p&gt;
+&lt;p&gt;First thing to do, implement animations/state transitions. As I mentioned
+yesterday, I find it generally hard to conceptualize such things (despite or
+maybe because of a strong tendency to …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Last-Minute-Effort&lt;/h1&gt;
 &lt;p&gt;There are officially 15 hours 38 minutes and 23 seconds left. Not a whole lot,
 but let's try anyway.&lt;/p&gt;
 &lt;p&gt;First thing to do, implement animations/state transitions. As I mentioned
@@ -29,7 +34,11 @@ having to write one huge game logic function.&lt;/p&gt;
 before the deadline. There is no game play, and it is not a game. Also, because
 I was running out of time, I had to adopt a 'whatever-works mentality'. That
 produced some truly horrible code. But I don't care. It's very later (or rather
-very early). I failed. I don't care. Good night.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 9</title><link href="https://ideosyncrasov.github.io/day-9.html" rel="alternate"></link><published>2017-10-21T23:41:00+02:00</published><updated>2017-10-22T03:23:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-21:/day-9.html</id><summary type="html">&lt;p&gt;Getting more skeptical by the minute.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Organizing Complexity&lt;/h1&gt;
+very early). I failed. I don't care. Good night.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 9</title><link href="https://ideosyncrasov.github.io/day-9.html" rel="alternate"></link><published>2017-10-21T23:41:00+02:00</published><updated>2017-10-22T03:23:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-21:/day-9.html</id><summary type="html">&lt;h1&gt;Organizing Complexity&lt;/h1&gt;
+&lt;p&gt;It's the second last day before submission (or what's left of it). I started
+working on the game about three hours ago. Most of this time was spent
+reorganizing code. Having everything crammed into one huge main files with
+dozens of global variables is never a good thing …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Organizing Complexity&lt;/h1&gt;
 &lt;p&gt;It's the second last day before submission (or what's left of it). I started
 working on the game about three hours ago. Most of this time was spent
 reorganizing code. Having everything crammed into one huge main files with
@@ -44,7 +53,13 @@ that works; you'll figure out soon enough if it sucks.&lt;/p&gt;
 &lt;p&gt;I've run into another problem: I don't know how to play sound in loops! The
 engine I'm using doesn't expose this capability. Guess I'll have to worry about
 other problems (of which there are plenty). But this will have to wait for
-tomororrow, for it is very late already.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 8</title><link href="https://ideosyncrasov.github.io/day-8.html" rel="alternate"></link><published>2017-10-20T17:46:00+02:00</published><updated>2017-10-21T00:28:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-20:/day-8.html</id><summary type="html">&lt;p&gt;Trying anyway.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Putting Yourself Together&lt;/h1&gt;
+tomororrow, for it is very late already.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 8</title><link href="https://ideosyncrasov.github.io/day-8.html" rel="alternate"></link><published>2017-10-20T17:46:00+02:00</published><updated>2017-10-21T00:28:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-20:/day-8.html</id><summary type="html">&lt;h1&gt;Putting Yourself Together&lt;/h1&gt;
+&lt;p&gt;Alrighty. It's still quite early in the day, plenty time to finish that tile
+renderer, don't you think? ;-)
+All I need is some coffee and a nice soundtrack to get me in the mood:
+&lt;em&gt;Halloween III: Season of the Witch&lt;/em&gt;. Hell yeah!&lt;/p&gt;
+&lt;h1&gt;A Good Scare&lt;/h1&gt;
+&lt;p&gt;It seems …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Putting Yourself Together&lt;/h1&gt;
 &lt;p&gt;Alrighty. It's still quite early in the day, plenty time to finish that tile
 renderer, don't you think? ;-)
 All I need is some coffee and a nice soundtrack to get me in the mood:
@@ -83,7 +98,11 @@ differently), and the character is rendered in the appropriate layer, so that
 it gets obscured when it moves behind a wall etc.&lt;/p&gt;
 &lt;p&gt;I initially hoped to be able to complete the tile renderer and the map. At
 least I achieved one of the two, so I'm quite happy. But now I must go to bed
-and not repeat the mistakes of previous nights!&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 7</title><link href="https://ideosyncrasov.github.io/day-7.html" rel="alternate"></link><published>2017-10-19T22:28:00+02:00</published><updated>2017-10-20T03:54:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-19:/day-7.html</id><summary type="html">&lt;p&gt;I'm far behind.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Trying Anyway&lt;/h1&gt;
+and not repeat the mistakes of previous nights!&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 7</title><link href="https://ideosyncrasov.github.io/day-7.html" rel="alternate"></link><published>2017-10-19T22:28:00+02:00</published><updated>2017-10-20T03:54:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-19:/day-7.html</id><summary type="html">&lt;h1&gt;Trying Anyway&lt;/h1&gt;
+&lt;p&gt;Dear reader,&lt;/p&gt;
+&lt;p&gt;you may be wondering what's happened to Day 6. Well, I didn't get to do any
+work on my game, because I had to work on something else I couldn't afford not
+to work on. I also went to the movies with an old friend, so …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Trying Anyway&lt;/h1&gt;
 &lt;p&gt;Dear reader,&lt;/p&gt;
 &lt;p&gt;you may be wondering what's happened to Day 6. Well, I didn't get to do any
 work on my game, because I had to work on something else I couldn't afford not
@@ -93,12 +112,18 @@ I hope to at least be able to rewrite the renderer to be able to handle .tmx
 files. Let's put on the &lt;em&gt;System Shock soundtrack&lt;/em&gt;, and let's go!&lt;/p&gt;
 &lt;h1&gt;Old Mistakes Done Anew&lt;/h1&gt;
 &lt;p&gt;I didn't manage to finish my tile renderer; I made barely any progress the
-last two hours because I was very tired. Why didn't I just go to bed? Oh, why?&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 5</title><link href="https://ideosyncrasov.github.io/day-5.html" rel="alternate"></link><published>2017-10-18T03:54:00+02:00</published><updated>2017-10-18T03:54:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-18:/day-5.html</id><summary type="html">&lt;p&gt;I'm stuck in a vicious circle.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Why am I doing this to me?&lt;/h1&gt;
+last two hours because I was very tired. Why didn't I just go to bed? Oh, why?&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 5</title><link href="https://ideosyncrasov.github.io/day-5.html" rel="alternate"></link><published>2017-10-18T03:54:00+02:00</published><updated>2017-10-18T03:54:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-18:/day-5.html</id><summary type="html">&lt;h1&gt;Why am I doing this to me?&lt;/h1&gt;
+&lt;p&gt;I didn't get a whole lot done today; I really should not have gone to bed so
+late yesterday, and today I repeated my mistake. I didn't implement a UI or an
+animation/scripting system. I only got to work on the map …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Why am I doing this to me?&lt;/h1&gt;
 &lt;p&gt;I didn't get a whole lot done today; I really should not have gone to bed so
 late yesterday, and today I repeated my mistake. I didn't implement a UI or an
 animation/scripting system. I only got to work on the map (about halfway done).
 Tomorrow I'll hopefully be able to complete the map and improve my renderer, so
-that it can read .tmx files and render several layers.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 4</title><link href="https://ideosyncrasov.github.io/day-4.html" rel="alternate"></link><published>2017-10-17T03:24:00+02:00</published><updated>2017-10-17T03:36:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-17:/day-4.html</id><summary type="html">&lt;p&gt;I need to make a &lt;em&gt;game&lt;/em&gt;.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A Myriad Little Details&lt;/h1&gt;
+that it can read .tmx files and render several layers.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 4</title><link href="https://ideosyncrasov.github.io/day-4.html" rel="alternate"></link><published>2017-10-17T03:24:00+02:00</published><updated>2017-10-17T03:36:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-17:/day-4.html</id><summary type="html">&lt;h1&gt;A Myriad Little Details&lt;/h1&gt;
+&lt;p&gt;Okay, this time I'll keep this very short, since it's already &lt;em&gt;very&lt;/em&gt; late and
+I'm quite tired. I didn't get to work on my game until about 8 pm, and I (of
+course) didn't manage to get as far as I intended, but at least I've …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A Myriad Little Details&lt;/h1&gt;
 &lt;p&gt;Okay, this time I'll keep this very short, since it's already &lt;em&gt;very&lt;/em&gt; late and
 I'm quite tired. I didn't get to work on my game until about 8 pm, and I (of
 course) didn't manage to get as far as I intended, but at least I've now got
@@ -109,7 +134,11 @@ to be weeded out. I'm not very happy that I didn't get to spend any time on
 working on the gameplay, but at least I was able to do a fair bit of cleaning.
 Tomorrow I plan to code some basic UI and a way to script things, and I hope
 I'll finally able to work on gameplay too.&lt;/p&gt;
-&lt;p&gt;Good night.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 3</title><link href="https://ideosyncrasov.github.io/day-3.html" rel="alternate"></link><published>2017-10-15T14:35:00+02:00</published><updated>2017-10-16T03:51:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-15:/day-3.html</id><summary type="html">&lt;p&gt;I need to produce code.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;From Fiction to Fact&lt;/h1&gt;
+&lt;p&gt;Good night.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 3</title><link href="https://ideosyncrasov.github.io/day-3.html" rel="alternate"></link><published>2017-10-15T14:35:00+02:00</published><updated>2017-10-16T03:51:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-15:/day-3.html</id><summary type="html">&lt;h1&gt;From Fiction to Fact&lt;/h1&gt;
+&lt;p&gt;Okay, day 3. Enough idle thinking, now I need to produce some code. My idea is
+to get at least a proof of concept of a character walking around in a 2d top
+down perspective room. Since I haven't aquainted myself with the engine I'm
+using …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;From Fiction to Fact&lt;/h1&gt;
 &lt;p&gt;Okay, day 3. Enough idle thinking, now I need to produce some code. My idea is
 to get at least a proof of concept of a character walking around in a 2d top
 down perspective room. Since I haven't aquainted myself with the engine I'm
@@ -126,7 +155,10 @@ map (even if it's very hacky). But I wouldn't even have gotten that far would
 re-evaluate code to have the change immediately effect a running process was
 &lt;em&gt;super helpful&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Tomorrow I'll hope to be able to implement character animation, and implement
-some gameplay mechanics.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 2</title><link href="https://ideosyncrasov.github.io/day-2.html" rel="alternate"></link><published>2017-10-14T16:24:00+02:00</published><updated>2017-10-14T19:30:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-14:/day-2.html</id><summary type="html">&lt;p&gt;A new day, a new hope.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A New Day, a New Start&lt;/h1&gt;
+some gameplay mechanics.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 2</title><link href="https://ideosyncrasov.github.io/day-2.html" rel="alternate"></link><published>2017-10-14T16:24:00+02:00</published><updated>2017-10-14T19:30:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-14:/day-2.html</id><summary type="html">&lt;h1&gt;A New Day, a New Start&lt;/h1&gt;
+&lt;p&gt;Alright, next day. Bad news: I wasted the night trying to fix a stupid bug in
+my iOS app (turned out to be an AutoLayout issue), and after doing a bit of
+necessary shopping it's already 4 pm. Good news: Borodust has already fixed …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A New Day, a New Start&lt;/h1&gt;
 &lt;p&gt;Alright, next day. Bad news: I wasted the night trying to fix a stupid bug in
 my iOS app (turned out to be an AutoLayout issue), and after doing a bit of
 necessary shopping it's already 4 pm. Good news: Borodust has already fixed the
@@ -182,7 +214,10 @@ on his daily routine.
 Of course the goal of this game (if it will ever exist) is to gain control of
 one's life, that is of the actions of the player character, by making
 appropriate choices that lead to more internal freedom and less addiction.&lt;/p&gt;
-&lt;p&gt;That's the rough idea at least. We'll see whether it will stay one.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 1</title><link href="https://ideosyncrasov.github.io/day-1.html" rel="alternate"></link><published>2017-10-13T10:20:00+02:00</published><updated>2017-10-13T19:30:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-13:/day-1.html</id><summary type="html">&lt;p&gt;Aller Anfang ist schwer.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A Simple Idea&lt;/h1&gt;
+&lt;p&gt;That's the rough idea at least. We'll see whether it will stay one.&lt;/p&gt;</content><category term="lisp"></category><category term="game jam"></category></entry><entry><title>Day 1</title><link href="https://ideosyncrasov.github.io/day-1.html" rel="alternate"></link><published>2017-10-13T10:20:00+02:00</published><updated>2017-10-13T19:30:00+02:00</updated><author><name>krasov</name></author><id>tag:ideosyncrasov.github.io,2017-10-13:/day-1.html</id><summary type="html">&lt;h1&gt;A Simple Idea&lt;/h1&gt;
+&lt;p&gt;Okay, so I've decided to join the Lisp Game Jam Fall 2017, and now I'm sitting here with
+my morning coffee trying to come up with an idea for a game. The theme for this
+jam is &lt;em&gt;darkness&lt;/em&gt;, which actually not that dull and generic of a …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;A Simple Idea&lt;/h1&gt;
 &lt;p&gt;Okay, so I've decided to join the Lisp Game Jam Fall 2017, and now I'm sitting here with
 my morning coffee trying to come up with an idea for a game. The theme for this
 jam is &lt;em&gt;darkness&lt;/em&gt;, which actually not that dull and generic of a theme as it
