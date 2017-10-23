@@ -44,10 +44,10 @@
 <body id="index" class="home">
      <div class="navigation">
         <ol class="nav">
-          <li><a href="https://ideosyncrasov.github.io">Blog</a> </li>
-          <li class="current"><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
+          <li class="current"><a href="https://ideosyncrasov.github.io">Blog</a> </li>
+          <li><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
           <li><a href="https://ideosyncrasov.github.io/tags.html">Tags</a> </li>
-          <li><a href="https://ideosyncrasov.github.io/">RSS</a> </li>
+          <li><a href="">RSS</a> </li>
         </ol>
       </div>
         <header id="banner" class="body">
@@ -56,46 +56,38 @@
         <nav id="menu"><ul>
         </ul></nav><!-- /#menu -->
         <div class="box">
-<h2>Archives:</h2>
-
-<table class="archives">
-    <tr>
-        <td>So 22 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-10.html">Day 10</a></td>
-    </tr>
-    <tr>
-        <td>Sa 21 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-9.html">Day 9</a></td>
-    </tr>
-    <tr>
-        <td>Fr 20 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-8.html">Day 8</a></td>
-    </tr>
-    <tr>
-        <td>Do 19 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-7.html">Day 7</a></td>
-    </tr>
-    <tr>
-        <td>Mi 18 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-5.html">Day 5</a></td>
-    </tr>
-    <tr>
-        <td>Di 17 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-4.html">Day 4</a></td>
-    </tr>
-    <tr>
-        <td>So 15 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-3.html">Day 3</a></td>
-    </tr>
-    <tr>
-        <td>Sa 14 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-2.html">Day 2</a></td>
-    </tr>
-    <tr>
-        <td>Fr 13 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-1.html">Day 1</a></td>
-    </tr>
-</table>
+<section id="content" class="body">
+  <header class="post">
+    <h1 class="entry-title">
+      Day 9
+    </h1>
+  </header>
+  <footer class="post-info">
+    <abbr>
+      Sa 21 Oktober 2017 
+         By <a class="url fn" href="https://ideosyncrasov.github.io/author/krasov.html">krasov</a>
+  
+    </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>Organizing Complexity</h1>
+<p>It's the second last day before submission (or what's left of it). I started
+working on the game about three hours ago. Most of this time was spent
+reorganizing code. Having everything crammed into one huge main files with
+dozens of global variables is never a good thing, time pressure or not.</p>
+<p>There is now much more separation between the individual parts of the game
+(updating game state, drawing game state, etc.), which helps me figuring out
+how to implement the game logic. I've always found organizing code (i.e.
+figuring out "what goes where") difficult. What helps me reduce the cognitive
+dissonance induced by this problem is to work iteratively: just put in anything
+that works; you'll figure out soon enough if it sucks.</p>
+<h1>Other Problems</h1>
+<p>I've run into another problem: I don't know how to play sound in loops! The
+engine I'm using doesn't expose this capability. Guess I'll have to worry about
+other problems (of which there are plenty). But this will have to wait for
+tomororrow, for it is very late already.</p>
+  </div><!-- /.entry-content -->
+</section>
             <hr/>
             <footer id="contentinfo" class="footer">
                 <div>

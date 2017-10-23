@@ -44,10 +44,10 @@
 <body id="index" class="home">
      <div class="navigation">
         <ol class="nav">
-          <li><a href="https://ideosyncrasov.github.io">Blog</a> </li>
-          <li class="current"><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
+          <li class="current"><a href="https://ideosyncrasov.github.io">Blog</a> </li>
+          <li><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
           <li><a href="https://ideosyncrasov.github.io/tags.html">Tags</a> </li>
-          <li><a href="https://ideosyncrasov.github.io/">RSS</a> </li>
+          <li><a href="">RSS</a> </li>
         </ol>
       </div>
         <header id="banner" class="body">
@@ -56,46 +56,53 @@
         <nav id="menu"><ul>
         </ul></nav><!-- /#menu -->
         <div class="box">
-<h2>Archives:</h2>
+<section id="content" class="body">
+  <header class="post">
+    <h1 class="entry-title">
+      Day 10
+    </h1>
+  </header>
+  <footer class="post-info">
+    <abbr>
+      So 22 Oktober 2017 
+         By <a class="url fn" href="https://ideosyncrasov.github.io/author/krasov.html">krasov</a>
+  
+    </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>Last-Minute-Effort</h1>
+<p>There are officially 15 hours 38 minutes and 23 seconds left. Not a whole lot,
+but let's try anyway.</p>
+<p>First thing to do, implement animations/state transitions. As I mentioned
+yesterday, I find it generally hard to conceptualize such things (despite or
+maybe because of a strong tendency to conceptual thinking). My momentary
+solutions is to maintain a list <code>active-animations</code> in my game state, which is
+a list of subclasses of an abstract base class <code>animation</code>.
+This base class defines three generic methods:</p>
+<div class="highlight"><pre><span></span>(defgeneric animate (animation state))
+(defgeneric draw (animation state))
+(defgeneric post-animation (animation state))
+</pre></div>
 
-<table class="archives">
-    <tr>
-        <td>So 22 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-10.html">Day 10</a></td>
-    </tr>
-    <tr>
-        <td>Sa 21 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-9.html">Day 9</a></td>
-    </tr>
-    <tr>
-        <td>Fr 20 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-8.html">Day 8</a></td>
-    </tr>
-    <tr>
-        <td>Do 19 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-7.html">Day 7</a></td>
-    </tr>
-    <tr>
-        <td>Mi 18 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-5.html">Day 5</a></td>
-    </tr>
-    <tr>
-        <td>Di 17 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-4.html">Day 4</a></td>
-    </tr>
-    <tr>
-        <td>So 15 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-3.html">Day 3</a></td>
-    </tr>
-    <tr>
-        <td>Sa 14 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-2.html">Day 2</a></td>
-    </tr>
-    <tr>
-        <td>Fr 13 Oktober 2017</td>
-        <td><a href="https://ideosyncrasov.github.io/day-1.html">Day 1</a></td>
-    </tr>
-</table>
+
+<p>Here <code>state</code> is a variable holding the game state. The first method is called
+in <code>update-world</code> and does some actions depending on the subclass, so there's
+one subclass for every kind of animation. The <code>animate</code> method return a boolean
+that indicates whether the animation is finished or not. If it is finished it
+is removed from <code>active-animations</code> and the method <code>post-animation</code> is called.
+Note that the <code>animate</code> method can itself push new animations to the front of
+<code>active-animations</code>, so that one animation can trigger another animation.
+Finally, <code>draw</code> is called on each rendering step.</p>
+<p>In this way I hope to be able to piece together the logic of the game, without
+having to write one huge game logic function.</p>
+<h1>It Didn't End Well</h1>
+<p>I did manage to submit something that <em>looks</em> like a game just five minutes
+before the deadline. There is no game play, and it is not a game. Also, because
+I was running out of time, I had to adopt a 'whatever-works mentality'. That
+produced some truly horrible code. But I don't care. It's very later (or rather
+very early). I failed. I don't care. Good night.</p>
+  </div><!-- /.entry-content -->
+</section>
             <hr/>
             <footer id="contentinfo" class="footer">
                 <div>

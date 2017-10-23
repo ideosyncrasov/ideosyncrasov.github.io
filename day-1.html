@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>krasov's blog</title>
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/main.css" type="text/css" />
+        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/font-awesome.css" type="text/css" />
+        <meta charset="utf-8" />
+      
+
+        <!-- Javascript-->
+        <script async src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script async type="text/javascript"> 
+        $(function() {
+            function invisibleMenu() {
+                var now = 0;
+                var pixels = 300;
+                var opacity = -1;
+
+                var move = function() {
+                    now = $(window).scrollTop();
+                    if (now > pixels && opacity !== 0)
+                        opacity = 0;
+                    else if (now < pixels){
+                        // Depends on the position not if scrolls down or up
+                        opacity = (1 - now/pixels);
+                    }
+                    $("div.navigation").css({"opacity": opacity});
+                }
+                $(window).scroll(move);
+                move();
+            }
+            invisibleMenu();
+          });
+          </script> 
+</head>
+
+<body id="index" class="home">
+     <div class="navigation">
+        <ol class="nav">
+          <li class="current"><a href="https://ideosyncrasov.github.io">Blog</a> </li>
+          <li><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
+          <li><a href="https://ideosyncrasov.github.io/tags.html">Tags</a> </li>
+          <li><a href="">RSS</a> </li>
+        </ol>
+      </div>
+        <header id="banner" class="body">
+                <div class="banner"><a href="https://ideosyncrasov.github.io">krasov's blog <strong></strong></a></div>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+        <div class="box">
+<section id="content" class="body">
+  <header class="post">
+    <h1 class="entry-title">
+      Day 1
+    </h1>
+  </header>
+  <footer class="post-info">
+    <abbr>
+      Fr 13 Oktober 2017 
+         By <a class="url fn" href="https://ideosyncrasov.github.io/author/krasov.html">krasov</a>
+  
+    </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>A Simple Idea</h1>
+<p>Okay, so I've decided to join the Lisp Game Jam Fall 2017, and now I'm sitting here with
+my morning coffee trying to come up with an idea for a game. The theme for this
+jam is <em>darkness</em>, which actually not that dull and generic of a theme as it
+sounds. Indeed the word 'dark' has several distinct but closely related
+meaning (taken from Merriam-Webster):</p>
+<blockquote>
+<ol>
+<li>devoid or partially devoid of light</li>
+<li>wholly or partially black</li>
+<li>a) arising from or showing evil traits or desires
+  b) dismal, gloomy
+  c) lacking knowledge or culture</li>
+<li>a) not clear to the understanding
+  b) not known or explored because of remoteness</li>
+</ol>
+</blockquote>
+<p>The esoteric wisdom preserved in this semantic cluster is that evil can only
+exist in darkness, i.e. in a state of ignorance, and that light (consciouness)
+dissolves darkness. Further, 4b) points to the fact that to gain awareness of
+ourselves means <em>exploring</em> ourselves, for our behaviour is ruled for the most
+part not by the processes of 'conscious' thoughts (thoughts are often automatic
+and not conscious) but by other, more obscure forces.</p>
+<p>This actually connects with an idea for a game I had a while ago, which
+revolved around making the player's consciousness the main focus of the game.
+In the above terms, the idea was to let the player bring light into a dark
+unenlightened world, whose inhabitants are suffering under their actions they
+inflict upon themselves in their ignorance. So, it would be some kind of 'god
+game' where the goal is not to rule but to enlighten and heal people.
+Such a game might even just focus on one person (e.g. someone suffering
+from depression/addiction), and in a sense, such a game already exists with
+<em>Depression Quest</em>.</p>
+<p>Unfortunately, this idea seems too vague and certainly too ambitious for a game
+dev n00b taking part in a ten day game jam in an obscure ancient programming
+language. Or is it? Anyway, I guess it's more productive if I try coming up
+with the <em>gameplay first</em>.</p>
+<p>Well whadda ya know, one shower later and I've come up with some barebones
+gameplay and a tentative title for the game, which embodies the principle upon
+which said gameplay rests: <em>Hidden Variables</em>. The idea is that you're
+controlling but not really controlling the actions of the protagonist, through
+multiple choice selection screens, each choice triggering a pre-defined 'cut
+scene' sequence. More precisely, the player selects a choice he would like to
+make, but which choice the protagonist realizes depends upon his inner mental
+and emotional states (the 'hidden variables' aluded to in the title).
+The player starts out with little control over his character, and must make the
+right decisions that lead his character on a healthier path and out of the
+slavery of unconscious emotions, out of the 'realms of dark forces', so that
+he gains more and more free will, disproving the saying that 'man can do what
+he wants but not want what he wants'.</p>
+<p>In a nutshell, <em>Hidden Variables</em> should be the move <em>Groundhog Day</em> turned
+into a roguelike. What I need to do next is come up with a functional system of
+hidden variables, i.e. emotional/mental dimensions like
+<em>irritation</em>&lt;-&gt;<em>concentration</em>, <em>discontent</em>&lt;-&gt;<em>pleasure</em>, etc. that at least
+somewhat faithfully reflects human behaviour, make some kind of 'hello world'
+demonstrating this idea. Even though my idea is that this should be a top-down
+2d game, if worst comes to worst I could simply turn this into a text
+adventure.</p>
+<p>Enough talking, let's code!</p>
+<h1>First Problems</h1>
+<p>Okay, a few hours later and I still haven't made any headway at all.
+I planned on using <a href="https://borodust.org/projects/trivial-gamekit/">borodust's engine</a>, but I couldn't get it to work
+on either windows (SBCL and CCL) or Debian (SBCL). Luckily, borodust offered
+quick and generous help on #lispgames, and even updated his quicklisp dist the
+very same evening, so I'm hopeful this will be sorted out soon.
+Anyway, I should probably concentrate on getting done a prototype demonstrating
+the core gameplay. This will have to wait till tomorrow however.</p>
+  </div><!-- /.entry-content -->
+</section>
+            <hr/>
+            <footer id="contentinfo" class="footer">
+                <div>
+                    <a href="https://ideosyncrasov.github.io">krasov</a> (2012)
+                </div>
+                <div>
+                    This work is licensed under <a rel="license" href="http://opensource.org/licenses/bsd-3-clause">3 clause BSD</a>. Source code available on <a rel="source code" href="https://github.com/slok/blog">Github</a>
+                </div>
+                <div>
+                    powered by <a href="http://getpelican.com/">Pelican</a>
+                    and <a href="http://python.org">Python</a>. 
+                    <a href="http://github.com/slok/iris">Theme</a> by <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a> based on <a href="http://flask.pocoo.org/">Flask</a> theme
+                </div>
+                <div>
+                    Social icons (font awesome) by <a href="http://fortawesome.github.com/Font-Awesome/"> fort awesome</a>.
+                    <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">Title</a>, <a href="http://www.google.com/webfonts/specimen/Marcellus">headers</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">source code</a> fonts by google fonts
+                </div>
+                <div class="social">
+                        <a href="https://bourbaki.itch.io/"><i class="icon-My Itch.io profile"></i>  </a>
+                </div>
+            </footer><!-- /#contentinfo -->
+        </div>
+        <!--Add statistycs-->
+
+</body>
+</html>
