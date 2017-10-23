@@ -1,87 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-        <title>krasov's blog</title>
-        <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/main.css" type="text/css" />
-        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/pygments.css" type="text/css" />
-        <link rel="stylesheet" href="https://ideosyncrasov.github.io/theme/css/font-awesome.css" type="text/css" />
-        <meta charset="utf-8" />
-      
-
-        <!-- Javascript-->
-        <script async src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-        <script async type="text/javascript"> 
-        $(function() {
-            function invisibleMenu() {
-                var now = 0;
-                var pixels = 300;
-                var opacity = -1;
-
-                var move = function() {
-                    now = $(window).scrollTop();
-                    if (now > pixels && opacity !== 0)
-                        opacity = 0;
-                    else if (now < pixels){
-                        // Depends on the position not if scrolls down or up
-                        opacity = (1 - now/pixels);
-                    }
-                    $("div.navigation").css({"opacity": opacity});
-                }
-                $(window).scroll(move);
-                move();
-            }
-            invisibleMenu();
-          });
-          </script> 
+  <title>Categories - krasov's blog</title>
+  <meta charset='utf-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+          <link href='https://ideosyncrasov.github.io/feeds/all.atom.xml' rel='alternate' type='application/atom+xml' title='krasov&#39;s blog Full Atom Feed'>
+      <link rel='stylesheet' href='https://ideosyncrasov.github.io/theme/css/main.css'/>
 </head>
 
-<body id="index" class="home">
-     <div class="navigation">
-        <ol class="nav">
-          <li class="current"><a href="https://ideosyncrasov.github.io">Blog</a> </li>
-          <li><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
-          <li><a href="https://ideosyncrasov.github.io/tags.html">Tags</a> </li>
-          <li><a href="https://ideosyncrasov.github.io/">RSS</a> </li>
-        </ol>
+<body itemscope itemtype='https://schema.org/WebPage' itemref='publisher-name publisher-description'>
+  <div id='header'>
+    <div class='handle'><span class='dots'></span></div>
+    <div class='content'>
+      <div itemscope itemtype='https://schema.org/Organization' itemid='https://ideosyncrasov.github.io'>
+        <header id='publisher'>
+          <h1><a itemprop='url' rel='home' href='https://ideosyncrasov.github.io'><span itemprop='name' id='publisher-name'>krasov&#39;s blog</span></a></h1>
+        </header>
       </div>
-        <header id="banner" class="body">
-                <div class="banner"><a href="https://ideosyncrasov.github.io">krasov's blog <strong></strong></a></div>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-        <div class="box">
-<ul>
-    <li><a href="https://ideosyncrasov.github.io/category/misc.html">misc</a></li>
-</ul>
-            <hr/>
-            <footer id="contentinfo" class="footer">
-                <div>
-                    <a href="https://ideosyncrasov.github.io">krasov</a> (2012)
-                </div>
-                <div>
-                    This work is licensed under <a rel="license" href="http://opensource.org/licenses/bsd-3-clause">3 clause BSD</a>. Source code available on <a rel="source code" href="https://github.com/slok/blog">Github</a>
-                </div>
-                <div>
-                    powered by <a href="http://getpelican.com/">Pelican</a>
-                    and <a href="http://python.org">Python</a>. 
-                    <a href="http://github.com/slok/iris">Theme</a> by <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a> based on <a href="http://flask.pocoo.org/">Flask</a> theme
-                </div>
-                <div>
-                    Social icons (font awesome) by <a href="http://fortawesome.github.com/Font-Awesome/"> fort awesome</a>.
-                    <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">Title</a>, <a href="http://www.google.com/webfonts/specimen/Marcellus">headers</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">source code</a> fonts by google fonts
-                </div>
-                <div class="social">
-                        <a href="https://bourbaki.itch.io/"><i class="icon-My Itch.io profile"></i>  </a>
-                </div>
-            </footer><!-- /#contentinfo -->
-        </div>
-        <!--Add statistycs-->
 
+
+<nav itemscope itemtype='https://schema.org/SiteNavigationElement'>
+  <div class='container'>
+    <div class='handle'>(Pages)</div>
+    <div class='content'>
+        (<span itemprop='name'><a itemprop='url' href='https://ideosyncrasov.github.io/tags.html' >Tags</a></span>)
+        (<span itemprop='name'><a itemprop='url' href='https://ideosyncrasov.github.io/authors.html' >Authors</a></span>)
+        (<span itemprop='name'><a itemprop='url' href='https://ideosyncrasov.github.io/archives.html' >Archives</a></span>)
+    </div>
+  </div>
+
+    <div class='container' id='nav-categories-container'>
+      <div class='handle'>
+        {<span itemprop='name'><a itemprop='url' href='https://ideosyncrasov.github.io/categories.html'>Categories</a></span>}
+      </div>
+      <div class='content'>
+          <span itemprop='name' class='category'><a itemprop='url' href='https://ideosyncrasov.github.io/category/misc.html' >misc</a></span>
+      </div>
+    </div>
+
+  <div class='container' id='nav-breadcrumb-container'>
+    <div class='handle'>&gt;</div>
+    <div class='content'>
+
+
+<div itemscope itemtype='https://schema.org/BreadcrumbList'>
+      <span itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+    <a itemprop='item' href='https://ideosyncrasov.github.io/categories.html'><span itemprop='name'>Categories</span></a>
+    <meta itemprop='position' content='2'/>
+  </span>
+  &lt;
+
+    <span itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'>
+    <meta itemprop='name' content='Home'/>
+    <span itemprop='item' itemscope itemtype='https://schema.org/Blog'>
+      <meta itemprop='name' content='krasov&#39;s blog'/>
+      <a itemprop='url' href='https://ideosyncrasov.github.io'>Home</a>
+    </span>
+    <meta itemprop='position' content='1'/>
+  </span>
+
+</div>
+
+<div itemscope itemtype='https://schema.org/BreadcrumbList'>
+    <span itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'>
+    <meta itemprop='name' content='Home'/>
+    <span itemprop='item' itemscope itemtype='https://schema.org/Blog'>
+      <meta itemprop='name' content='krasov&#39;s blog'/>
+      <a itemprop='url' href='https://ideosyncrasov.github.io'>Home</a>
+    </span>
+    <meta itemprop='position' content='1'/>
+  </span>
+
+</div>    </div>
+  </div>
+</nav>    </div>
+  </div>
+
+  <main>
+      <h2 itemprop='headline' id='content-title'>Categories</h2>
+
+      <div itemprop='mainEntity' itemscope itemtype='https://schema.org/Blog'>
+              <span class='category'><a href='/category/misc.html'>misc</a></span>
+ (9)
+
+      </div>
+  </main>
+
+
+  <footer>
+<!-- Proudly powered by Pelican which takes great advantage of Python, with Apricot theme (v0.1.0) by Yu-Jie Lin. -->
+
+  </footer>
 </body>
-</html>
