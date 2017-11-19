@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>A Belated Post-Mortem - krasov's blog</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Inika" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://ideosyncrasov.github.io/theme/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://ideosyncrasov.github.io/theme/pastie.css" />
+    <link href="https://ideosyncrasov.github.io/" type="application/atom+xml" rel="alternate" title="krasov's blog Atom Feed" />
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+<div id="content">
+    <div class="header">
+        <h1>A Belated Post-Mortem</h1>
+    </div>
+    <p class="meta"><small><span><a href="https://ideosyncrasov.github.io/author/krasov.html">krasov</a> - </span><span>So 19 November 2017</span> - <span class="tags"><a href="/tag/lisp.html">lisp</a>, <a href="/tag/game-jam.html">game jam</a></span></small></p>
+        <div class="entry-content">
+        <p>comes next.</p>
+<h1>Against All Odds</h1>
+<p>Welcome back world! I'm finally doing the post-mortem for the 'game'
+I submitted to the Lisp Game Jam 2017 that happened in October. And what do you
+know, my submission came in first place (as unlikely as that sounds)!
+More precisely, the ratings were as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Game</th>
+<th>Overall score</th>
+<th>Creativity score</th>
+<th>Presentation score</th>
+<th>Entertainment score</th>
+<th>Theme integration score</th>
+<th># Votes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In the Realm of Dark Forces</td>
+<td>3.083</td>
+<td>3.333</td>
+<td>3.667</td>
+<td>2.667</td>
+<td>2.667</td>
+<td>3</td>
+</tr>
+<tr>
+<td>NOTALONE</td>
+<td>2.875</td>
+<td>3.000</td>
+<td>2.500</td>
+<td>2.000</td>
+<td>4.000</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Dark Planets</td>
+<td>2.750</td>
+<td>3.500</td>
+<td>3.000</td>
+<td>1.500</td>
+<td>1.500</td>
+<td>2</td>
+</tr>
+<tr>
+<td>B@TTY</td>
+<td>2.298</td>
+<td>2.121</td>
+<td>2.828</td>
+<td>1.414</td>
+<td>2.828</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, the ratings have to be taken with a big grain of salt since
+there were so few of them. Also note that the above scores are not the <em>raw</em>
+scores but scores that take into account the number of ratings. The winner in
+terms of raw scores would actually be the game that is last in the above
+ranking.</p>
+<p>But if there is at least one thing I can deduce from this table, then it is
+that my entry succeeded in terms of presentation.</p>
+<h1>What Went Right</h1>
+<p>So the decision to spend time on implementing a tile-based renderer did pay off
+in the end, because it allowed me to make use of some well-made assets done by
+other people. It's really worth stressing the fact that my game contained <em>no
+gameplay whatsoever</em> and still was relatively well received. A good
+presentation can go a long way!</p>
+<p>Having something decent to look at was also something that motivated me
+<em>during</em> development. Also, writing this blog really helped me order my ideas,
+even though it took away a little bit of development time. In particular,
+I really recommend writing about what you want to do on a particular day
+<em>before</em> you do it, for the very same reason that it orders the ideas in your
+head and makes you more focused.</p>
+<h1>What Went Wrong</h1>
+<p>It is very tempting to look at your own creations with rose-tinted glasses and
+evaluate them with too much forgiveness because they are 'your own children'.
+At the same time, it is also very tempting to be overly critical of yourself
+<em>in hindsight</em> (especially if you are doing that self-criticism in public,
+because it allows you to think of yourself as a righteous person); in a sense,
+the 'later I' that evaluates the work of the 'former I' is a kind
+of <em>arm chair expert</em>. And so, one must be very cautious with judgements after
+the facts.</p>
+<p>One should also make a distinction between 'mistakes' and 'things you should
+not have done', i.e. between mistakes that were <em>worth making</em> and those that
+<em>weren't</em>. For example, here are some mistakes that I don't regret making:</p>
+<ul>
+<li>I focused on developing the graphics instead of the gameplay. Developing the
+  tile-based renderer turned out to be way more time-consuming than I thought,
+  because it resulted in several new sub-tasks (understanding the .tmx file
+  format, creating extra tiles for the tilesets).</li>
+<li>Spend the last few hours of the game jam with polishing the look and feel.
+  For example, during that time I implemented a simulation of night/daytime
+  colour changes.</li>
+<li>I went with a slightly unorthodoxic game idea that I was interested in,
+  instead of sticking with something more traditional and realistic.</li>
+</ul>
+<p>The reason why I don't regret the first two mistakes follows from the above
+discussion: even I had no gameplay to show for at all, at least it succeeded in
+the area of visuals. The reason I don't regret the third mistake is that
+I doubt I would have had the motivation to work much at all on the game had it
+been something my heart was not in.</p>
+<p>How about mistakes I regret? Well, ...</p>
+<ul>
+<li>Staying up 'just a little bit more' to get things done is a stupid idea <em>in
+  general</em> because a) spending two more hours on game development when you are
+  tired and exhausted is less efficient than spending those same two hours when
+  you are fresh and awake, and b) disrupting your sleep schedule really lowers
+  your creativity and productivity on the next day. However, this does <em>not</em>
+  apply to the very last day before the deadline: if I hadn't 'crunched',
+  I would not have been able to submit anything at all.</li>
+<li>Sacrificing things you normally do for game development. Again, this comes
+  with the same caveat as the mistake above, in the sense that it doesn't apply
+  to the day before the deadline. Otherwise, I wouldn't recommend that you miss
+  events or activities you would do normally in order to have more time for
+  development. What good does a few more hours do if you spend those hours
+  feeling miserable because you denied yourself an accustomed source of
+  pleasure?</li>
+</ul>
+<h1>The Real Challenge Lies Ahead</h1>
+<p>Okay, so the game jam is now well over, and technically it even was a success.
+Now what? Well, now comes the hardest part, because now the task of completing
+the game presents itself to me, and I have no energy-spending deadline ahead of
+me that pushes me to work, no people to compete with and compare myself with.
+Rather, what lies ahead of me the long, slow, and lonely crawl to completion.</p>
+<p>Wish me luck!</p>
+        </div><!-- /.entry-content -->
+</div>
+        </div>
+        <div class="span3 offset1">
+          <div class="well">
+            <ul class="nav nav-list">
+              <li class="nav-header">Blog</li>
+              <li ><a href="https://ideosyncrasov.github.io">Index</a></li>
+              <li ><a href="https://ideosyncrasov.github.io/tags.html">Tags</a></li>
+              <li ><a href="https://ideosyncrasov.github.io/archives.html">Archive</a></li>
+              <li class="nav-header">Links</li>
+              <li><a href="https://ideosyncrasov.github.io/feeds/all.atom.xml">Atom Feed</a></li>
+              <li><a href="https://bourbaki.itch.io/">Itch.io Profile</a></li>
+              <li><a href="mailto:krasov@fea.st">Email</a></li>
+            </ul>
+          </div><!-- /#menu -->
+        </div>
+      </div>
+
+      <hr />
+
+
+
+  </body>
+</html>
